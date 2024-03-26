@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/embla-carousel/embla-carousel.umd.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="main">
+        <div>
+          <img src="search.svg" alt="" />
+          <input type="text" name="" id="" placeholder="Where to?" />
+        </div>
+
+        <div class="menu">
+          <div>
+            <img src="Explore.svg" alt="" />
+            <p class="current-option">Explore</p>
+          </div>
+          <div>
+            <img src="Wishlists.svg" alt="" />
+            <p>Wishlists</p>
+          </div>
+          <div>
+            <img src="Trips.svg" alt="" />
+            <p>Trips</p>
+          </div>
+          <div>
+            <img src="Inbox.svg" alt="" />
+            <p>Inbox</p>
+          </div>
+          <div>
+            <img src="Profile.svg" alt="" />
+            <p>Profile</p>
+          </div>
+        </div>
+
+        <div class="menu-options">
+          <div>
+            <img src="Seaside.svg" alt="" />
+            <p class="current-option">Seaside</p>
+          </div>
+          <div>
+            <img src="Forest.svg" alt="" />
+            <p>Forest</p>
+          </div>
+          <div>
+            <img src="Cabin.png" alt="" />
+            <p>Cabin</p>
+          </div>
+          <div>
+            <img src="City.svg" alt="" />
+            <p>City</p>
+          </div>
+          <div>
+            <img src="Mountain.svg" alt="" />
+            <p>Mountain</p>
+          </div>
+        </div>
+
+        <hr />
+
+        <div class="seaside">
+          <div>
+            <img src="landscape1.png" alt="" />
+            <h2>Seattle, Washington</h2>
+            <p>Moderm home with ocean view</p>
+            <p>4,000 sq ft 5 beds 6 baths</p>
+          </div>
+
+          <div>
+            <img src="landscape2.png" alt="" />
+            <h2>Seattle, Washington</h2>
+            <p>Moderm home with ocean view</p>
+            <p>4,000 sq ft 5 beds 6 baths</p>
+          </div>
+
+          <div>
+            <img src="landscape3.png" alt="" />
+            <h2>Seattle, Washington</h2>
+            <p>Moderm home with ocean view</p>
+            <p>4,000 sq ft 5 beds 6 baths</p>
+          </div>
+        </div>
+
+        <div class="experience">
+          <h2>Experience</h2>
+          <div class="embla">
+            <div class="embla__container">
+              <div class="embla__slide">
+                <img src="Ski.png" alt="" />
+                <h2>Ski</h2>
+              </div>
+
+              <div class="embla__slide">
+                <img src="Snowboard.png" alt="" />
+                <h2>Snowboard</h2>
+              </div>
+
+              <div class="embla__slide">
+                <img src="hike.png" alt="" />
+                <h2>Hike</h2>
+              </div>
+
+              <div class="embla__slide">
+                <img src="camping.jpeg" alt="" />
+                <h2>Camping</h2>
+              </div>
+
+              <div class="embla__slide">
+                <img src="surf.jpeg" alt="" />
+                <h2>Surf</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript">
+      document.addEventListener("DOMContentLoaded", function () {
+        const emblaNode = document.querySelector(".embla");
+        const options = { loop: false }; // Puedes personalizar las opciones según tus necesidades
+        const emblaApi = EmblaCarousel(emblaNode, options);
+      });
+    </script>
+  </body>
+</html>

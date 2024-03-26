@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Embla Carousel Example</title>
+    <style>
+        .embla {
+            overflow: hidden;
+        }
+        .embla__container {
+            display: flex;
+            gap: 0.5em;
+        }
+        .embla__slide {
+            flex: 0 0 35%; /* Slide covers 35% of the viewport */
+            min-width: 0;
+            border: 1px solid red;
+            /* Añade estilos adicionales para tus diapositivas aquí */
+        }
+    </style>
+    <script src="https://unpkg.com/embla-carousel/embla-carousel.umd.js"></script>
+</head>
+<body>
+    <div class="embla">
+        <div class="embla__container">
+            <div class="embla__slide">Slide 1</div>
+            <div class="embla__slide">Slide 2</div>
+            <div class="embla__slide">Slide 3</div>
+            <div class="embla__slide">Slide 3</div>
+
+            <!-- Agrega más diapositivas según sea necesario -->
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        document.addEventListener('DOMContentLoaded', function () {
+            const emblaNode = document.querySelector('.embla');
+            const options = { loop: false }; // Puedes personalizar las opciones según tus necesidades
+            const emblaApi = EmblaCarousel(emblaNode, options);
+        });
+    </script>
+</body>
+</html>
